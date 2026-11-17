@@ -1,0 +1,29 @@
+{
+  "name": "jurichain",
+  "version": "1.0.0",
+  "description": "JuriChain - penjurian lomba commit-reveal di Base Sepolia",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "export-abi": "hardhat run scripts/export-abi.ts",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.ts --network baseSepolia",
+    "verify:base-sepolia": "hardhat verify --network baseSepolia",
+    "simulasi": "hardhat run scripts/simulasi-lokal.ts --network localhost",
+    "dev": "npm --prefix web run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^22.20.5",
+    "dotenv": "^18.0.10",
+    "hardhat": "^2.29.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8",
+    "viem": "^2.58.0"
+  }
+}

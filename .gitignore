@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Rahasia — JANGAN di-commit
+.env
+.env.local
+.env.*.local
+
+# Hardhat
+artifacts/
+cache/
+typechain-types/
+coverage/
+coverage.json
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Deploy lokal (alamat berubah tiap node restart)
+deployments/hardhat.json
+deployments/localhost.json
